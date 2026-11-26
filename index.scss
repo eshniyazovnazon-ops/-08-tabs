@@ -1,0 +1,61 @@
+$primary: #6366f1;
+$bg: #f1f5f9;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg;
+  font-family: Arial, sans-serif;
+}
+
+.tabs {
+  background: #fff;
+  border-radius: 12px;
+  width: 380px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  .buttons {
+    display: flex;
+
+    .tab-btn {
+      flex: 1;
+      padding: 14px;
+      border: none;
+      background: #e2e8f0;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.2s;
+
+      &.active {
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+
+  .content {
+    padding: 20px;
+
+    .tab-panel {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      h2 {
+        margin-top: 0;
+        color: $primary;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #444;
+      }
+    }
+  }
+}

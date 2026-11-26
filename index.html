@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вкладки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="tabs">
+    <div class="buttons">
+        <button class="tab-btn active" data-tab="html">HTML</button>
+        <button class="tab-btn" data-tab="css">CSS</button>
+        <button class="tab-btn" data-tab="js">JavaScript</button>
+    </div>
+    <div class="content">
+        <div class="tab-panel active" id="html">
+            <h2>HTML</h2>
+            <p>HTML отвечает за структуру страницы — заголовки, кнопки, тексты.</p>
+        </div>
+        <div class="tab-panel" id="css">
+            <h2>CSS</h2>
+            <p>CSS делает страницу красивой — цвета, отступы, шрифты, анимации.</p>
+        </div>
+        <div class="tab-panel" id="js">
+            <h2>JavaScript</h2>
+            <p>JavaScript добавляет логику — реакции на клики, работу с данными.</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
